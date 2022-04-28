@@ -1,4 +1,4 @@
-package day7;
+package day8;
 
 public class Airplane {
     private String manufacturer;
@@ -19,6 +19,15 @@ public class Airplane {
 
     public void fillUp(int n) {
         this.fuel += n;
+    }
+
+    @Override
+    public String toString() {
+        return "Изготовитель : " + this.manufacturer + ", "
+                + "год выпуска : " + this.year + ", "
+                + "длина : " + this.length + ", "
+                + "вес : " + this.weight + ", "
+                + "количество топлива в баке : " + this.fuel;
     }
 
     public void info() {

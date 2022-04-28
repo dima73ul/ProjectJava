@@ -10,7 +10,7 @@ public class Airplane {
     private int fuel;
 
     public void fillUp(int n) {
-        this.fuel = n;
+        this.fuel += n;
     }
 
     public void info() {

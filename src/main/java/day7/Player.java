@@ -23,7 +23,12 @@ public class Player {
     }
 
     public  void run(Player player){
+        if(player.getStamina() == 0){
+            return;
+        }
+
         player.stamina--;
+
         if(player.getStamina() == 0){
             System.out.println("Выносливость равно нулю игрок покидает поле");
             countPlayers--;
